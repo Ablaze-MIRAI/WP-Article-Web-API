@@ -1,7 +1,7 @@
 # WP Article Web API
 これはWordPressの最新記事情報の取得を簡易化するためのAPIです。Webサイト等に表示する際などに簡単に実装することができます。
 
-つくったひと→ [@code-raisan](https://github.com/code-raisan)s
+つくったひと→ [@code-raisan](https://github.com/code-raisan)
 
 ## How to use
 Ablazeでホストしているものをお使いいただくこともできますが、自鯖でホストする事で少しオプションを設定することができます。その時々の条件に合わせてご使用ください。
