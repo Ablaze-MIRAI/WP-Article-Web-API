@@ -33,6 +33,32 @@ Ablazeでホストしているものをお使いいただくこともできま�
 [API ROOT]/?home=https://blog.example.com/&categories=10+12
 ```
 
+レスポンス例([Ablog](https://blog.ablaze.one)より)
+```
+{
+  "code": 200,
+  "categories": false,
+  "items": [
+    {
+      "title": "おすすめの Firefox アドオンのご紹介！タブ管理から、プライバシーまで",
+      "date": "2022-03-18T21:12:13",
+      "author": "すらーぷの妖精",
+      "link": "https://blog.ablaze.one/?p=1437",
+      "description": "どうも、こんにちは！すらーぷの妖精です！今回は、Twitter でリクエストをいただいたので、おすすめで便利なアドオンを紹介します。ランキングはつけません。 ",
+      "image": "https://blog.ablaze.one/wp-content/uploads/2022/02/ABlog.png"
+    },
+    {
+      "title": "libadwaitaに対するAlexandriteOSの考え",
+      "date": "2022-03-12T12:45:41",
+      "author": "nexryai",
+      "link": "https://blog.ablaze.one/?p=1406",
+      "description": "注意: この考えはあくまでAlexandriteOSの開発者の考えであり、Ablazeを代表するものでは一切ありません Gnome42で本格的にlibadw ",
+      "image": "https://blog.ablaze.one/wp-content/uploads/2022/03/Screenshot-from-2022-03-12-12-44-27.png"
+    }
+  ]
+}
+```
+
 ### カテゴリIDの取得方法
 このAPIには `DEV OPTION` というページがあり、そこで `カテゴリID` と `カテゴリ名` の対応表を見ることができます。カテゴリ表は `dev` パラメーターを付与したURLにWebブラウザからアクセスする事で見ることができます。
 
