@@ -134,3 +134,6 @@ $ALLOW_ORIGIN = "example.com about.example.com";
 ```
 $DEV_OPTION = true;
 ```
+
+## LICENSE
+ライセンスはMIT Licenseで公開しています。
