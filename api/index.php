@@ -36,7 +36,7 @@ if(!isset($_GET["home"]) && empty($_GET["home"])){
             "code" => 400,
             "message" => 'Not found WP_HOME_URL(Set $WP_HOME_URL or \'home\' parameter)'
         ]);
-        exit;
+        exit();
     }else{
         $API_ENDPOINT = Validation_URL($WP_HOME_URL);
     }
@@ -120,7 +120,7 @@ foreach((array)$res as $Item){
             "url" => $Item["_embedded"]["wp:featuredmedia"][0]["source_url"],
             "width" => $Item["_embedded"]["wp:featuredmedia"][0]["media_details"]["width"],
             "height" => $Item["_embedded"]["wp:featuredmedia"][0]["media_details"]["height"] 
-        ],
+        ]
     ];
     array_push($Articles, $article);
 }
