@@ -116,7 +116,11 @@ foreach((array)$res as $Item){
         "author" => $Item["_embedded"]["author"][0]["name"],
         "link" => $Item["guid"]["rendered"],
         "description" => $description,
-        "image" => $Item["_embedded"]["wp:featuredmedia"][0]["source_url"]
+        "image" => [
+            "url" => $Item["_embedded"]["wp:featuredmedia"][0]["source_url"],
+            "width" => $Item["_embedded"]["wp:featuredmedia"][0]["media_details"]["width"],
+            "height" => $Item["_embedded"]["wp:featuredmedia"][0]["media_details"]["height"] 
+        ],
     ];
     array_push($Articles, $article);
 }
