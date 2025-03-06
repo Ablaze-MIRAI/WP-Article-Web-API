@@ -77,7 +77,7 @@ if(isset($_GET["dev"])){
 $categories = false;
 $API_ENDPOINT .= "posts?_embed";
 if(isset($_GET["categories"]) && !empty($_GET["categories"])){
-    $API_ENDPOINT .= "&categories={$_GET['categories']}";
+    $API_ENDPOINT .= "&categories=".urlencode($_GET['categories']);
     $categories = $_GET["categories"];
 }
 
